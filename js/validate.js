@@ -20,7 +20,7 @@ function validate(event) {
   }
 
   const longitude = document.getElementById("longitude").value;
-  const validLong = longitude && (longitude >= -180 || longitude <= 180);
+  const validLong = longitude && (longitude >= -180 && longitude <= 180);
   let invalidLong = document.getElementById("longitude-invalid");
   if (!validLong) {
     event.preventDefault();
